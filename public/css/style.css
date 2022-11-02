@@ -1,0 +1,106 @@
+
+
+#techblog {
+    text-align: center;
+    font-size: 45px;
+}
+
+#techSubtitle {
+    text-align: center;
+    font-weight: bold;
+}
+
+#comments {
+    display: inline-block;
+    flex-direction: column;
+
+}
+
+/* * {
+    outline: red dotted; 
+} */
+
+.all-forms {
+    border: black solid 2px; 
+    padding: 7px; 
+    background-color: lightgray; 
+}
+
+#loginEmailForm {
+    padding: 7px; 
+}
+
+#email-login {
+    margin-left: 20px;
+}
+
+#loginBtn {
+    margin-top: 20px; 
+}
+
+.signup-form {
+    border: black solid 2px; 
+    padding: 7px; 
+    background-color: lightgray; 
+}
+
+#name-signup {
+    
+    margin-left: 21px;
+}
+
+#email-signup {
+    
+    margin-left: 27px;
+}
+
+#emailSignUp {
+    margin-left: 7px;
+}
+
+.signupEmailForm {
+    padding: 7px;
+    
+}
+
+#singupBtn {
+    margin-top: 20px;
+}
+
+.homeblogs {
+    margin: 10px;
+}
+
+.newPost {
+    font-size: 20px;
+    border-radius: 5px;
+    padding: 8px; 
+    margin-left: 10px;
+    width: 15%;
+    color: white 
+}
+
+#submitBtn {
+    border-radius: 5px;
+    padding: 7px;
+    width: 15%; 
+    color: white;
+}
+
+#logout-link:hover {
+    cursor: pointer;
+}
+
+.homepagePost {
+    display: flex;
+    justify-content: space-between;
+}
+
+.homepage-label {
+    text-align: center;
+    width: 20%;
+    border: 2px rgb(130, 130, 255) solid;
+    border-radius: 5px;
+    margin-left: 10px;
+    padding-bottom: 10px;
+}

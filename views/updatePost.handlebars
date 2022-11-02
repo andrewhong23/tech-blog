@@ -1,0 +1,20 @@
+<div class="row mt-4">
+    <div class="col-md-6">
+        <h3>Edit Post</h3>
+        <form id="editForm">
+            <div class="mb-3">
+                <label for="titleInput1" class="form-label">Title:</label>
+                <input type="text" value="{{title}}" class="form-control" id="titleInput1" placeholder="please type here...">
+            </div>
+            <div class="mb-3">
+                <label for="contentTextarea1" class="form-label">Content</label>
+                <textarea class="form-control" id="contentTextarea1" rows="3">{{content}}</textarea>
+            </div>
+            <div class="form-group">
+                <button type="submit" id="updateBtn" class="btn btn-primary" data-id={{id}}>Update Post</button>
+                <button type="submit" id="deleteBtn" class="btn btn-primary" data-id={{id}}>Delete Post</button>
+            </div>
+        </form>
+    </div>
+</div>
+<script src="/js/update.js"></script>

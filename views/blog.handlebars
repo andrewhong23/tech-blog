@@ -1,0 +1,32 @@
+<div>
+    <div class="all-forms flex-row justify-space-between">
+        <h2>
+            {{title}}
+        </h2>
+        <p>
+            {{content}}
+        </p>
+        <p>{{format_date date_created}}</p>
+        <p>{{user.username}}</p>
+    </div>
+    <div class="mb-3">
+        <input type="hidden" id="input" value="{{id}}">
+        <hr>
+        <label for="exampleFormControlTextarea1" class="form-label" style="font-weight: bold;">Comment Here:</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+    </div>
+    <button id="submitBtn" class="bg-primary">Submit</button>
+    <hr>
+    <div class="card">
+        <h2>Comments:</h2>
+        {{#each comments}}
+        <div class="card-body flex-row">
+            {{commentContent}} by: {{user.username}} on {{format_date date_created}}
+            <hr>
+        </div>
+        {{/each}}
+    </div>
+
+</div>
+
+<script src="/js/comment.js"></script>

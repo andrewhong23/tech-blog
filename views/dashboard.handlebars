@@ -1,0 +1,17 @@
+<h1 class="homepage-label">Dashboard</h1>
+
+{{#each posts as |post| }}
+<div class="card all-forms homeblogs">
+  <h5 class="card-header userPost">
+    <a href="/edit/{{post.id}}">{{post.title}}</a>
+    <p>{{post.content}}</p>
+  </h5>
+</div>
+{{/each}}
+
+<div>
+    <a href="/newpost"><button class="newPost bg-primary">+ New Post</button></a>
+</div>
+
+
+
